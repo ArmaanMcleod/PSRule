@@ -31,6 +31,11 @@
          <changefreq>daily</changefreq>
     </url>
     <url>
+         <loc>https://microsoft.github.io/PSRule/v2/deprecations/</loc>
+         <lastmod>2022-01-14</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
          <loc>https://microsoft.github.io/PSRule/v2/faq/</loc>
          <lastmod>2022-01-14</lastmod>
          <changefreq>daily</changefreq>
@@ -272,6 +277,16 @@
     </url>
     <url>
          <loc>https://microsoft.github.io/PSRule/v2/scenarios/benchmark/results-v1.11.0/</loc>
+         <lastmod>2022-01-14</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://microsoft.github.io/PSRule/v2/scenarios/benchmark/results-v2.0.0-pre.2/</loc>
+         <lastmod>2022-01-14</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://microsoft.github.io/PSRule/v2/scenarios/benchmark/results-v2.0.0-pre.3/</loc>
          <lastmod>2022-01-14</lastmod>
          <changefreq>daily</changefreq>
     </url>
