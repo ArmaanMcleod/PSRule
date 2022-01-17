@@ -951,6 +951,8 @@
         
           
         
+          
+        
       
       
         <label class="md-nav__link" for="__nav_3">
@@ -1461,6 +1463,20 @@
     <li class="md-nav__item">
       <a href="../about_PSRule_Selectors/" class="md-nav__link">
         Selectors
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../about_PSRule_SuppressionGroups/" class="md-nav__link">
+        Suppression Groups
       </a>
     </li>
   
@@ -2016,6 +2032,9 @@ The syntax for an object path is inspired by JSONPath which is current an IETF I
   When this is used, the plus selector perform an case-insensitive match.</li>
 <li>Quoted member names with single or double quotes are supported with dot selector.
   i.e. <code>Properties.'spaced name'</code> is valid.</li>
+<li>Member names with a dash <code>-</code> are supported without being quoted.
+  However member names can not start or end with a dash.
+  i.e. <code>Properties.dashed-name</code> and <code>Properties.'-dashed-name'</code> are valid.</li>
 </ul>
 <h3 id="contains">Contains<a class="headerlink" href="#contains" title="Permanent link">#</a></h3>
 <p>The <code>Contains</code> assertion method checks the field value contains the specified string.
@@ -3287,7 +3306,7 @@ If a <code>_PSRule</code> property exists with <code>issue</code> sub-property P
   <small>
     
       Last update:
-      2022-01-03
+      2022-01-14
     
   </small>
 </div>
