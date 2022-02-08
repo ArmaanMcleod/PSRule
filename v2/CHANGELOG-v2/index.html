@@ -15,7 +15,7 @@
         <link rel="canonical" href="https://microsoft.github.io/PSRule/v2/CHANGELOG-v2/">
       
       <link rel="icon" href="../assets/ms_icon.png">
-      <meta name="generator" content="mkdocs-1.2.3, mkdocs-material-8.1.9">
+      <meta name="generator" content="mkdocs-1.2.3, mkdocs-material-8.1.10">
     
     
       
@@ -23,7 +23,7 @@
       
     
     
-      <link rel="stylesheet" href="../assets/stylesheets/main.2b4465f4.min.css">
+      <link rel="stylesheet" href="../assets/stylesheets/main.d6be258b.min.css">
       
         
         <link rel="stylesheet" href="../assets/stylesheets/palette.e6a45f82.min.css">
@@ -876,6 +876,20 @@
 </li>
       
         <li class="md-nav__item">
+  <a href="#v200-b2202024-pre-release" class="md-nav__link">
+    v2.0.0-B2202024 (pre-release)
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#v200-b2202017-pre-release" class="md-nav__link">
+    v2.0.0-B2202017 (pre-release)
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
   <a href="#v200-b2202006-pre-release" class="md-nav__link">
     v2.0.0-B2202006 (pre-release)
   </a>
@@ -1344,6 +1358,20 @@
 </li>
       
         <li class="md-nav__item">
+  <a href="#v200-b2202024-pre-release" class="md-nav__link">
+    v2.0.0-B2202024 (pre-release)
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#v200-b2202017-pre-release" class="md-nav__link">
+    v2.0.0-B2202017 (pre-release)
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
   <a href="#v200-b2202006-pre-release" class="md-nav__link">
     v2.0.0-B2202006 (pre-release)
   </a>
@@ -1423,7 +1451,40 @@
 <li>YAML resources will require an <code>apiVersion</code> from PSRule v2. <a href="https://github.com/microsoft/PSRule/issues/648">#648</a></li>
 <li>Setting the default module baseline requires a module configuration from PSRule v2. <a href="https://github.com/microsoft/PSRule/issues/809">#809</a></li>
 </ul>
+<div class="admonition info">
+<p class="admonition-title">Info</p>
+<p>You can discuss v2 pre-releases on the <a href="https://github.com/microsoft/PSRule/discussions/966">GitHub discussions page</a>.</p>
+</div>
 <h2 id="unreleased">Unreleased<a class="headerlink" href="#unreleased" title="Permanent link">#</a></h2>
+<h2 id="v200-b2202024-pre-release">v2.0.0-B2202024 (pre-release)<a class="headerlink" href="#v200-b2202024-pre-release" title="Permanent link">#</a></h2>
+<p>What's changed since pre-release v2.0.0-B2202017:</p>
+<ul>
+<li>New features:<ul>
+<li>Added source expression property. <a href="https://github.com/microsoft/PSRule/issues/933">#933</a><ul>
+<li>Included the following expressions:<ul>
+<li><code>source</code></li>
+<li><code>withinPath</code></li>
+<li><code>notWithinPath</code></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<h2 id="v200-b2202017-pre-release">v2.0.0-B2202017 (pre-release)<a class="headerlink" href="#v200-b2202017-pre-release" title="Permanent link">#</a></h2>
+<p>What's changed since pre-release v2.0.0-B2202006:</p>
+<ul>
+<li>Bug fixes:<ul>
+<li>Fixed GitHub code scanning alerts treats pass as problems. <a href="https://github.com/microsoft/PSRule/issues/955">#955</a><ul>
+<li>By default, SARIF output will only include fail or error outcomes.</li>
+<li>Added <code>Output.SarifProblemsOnly</code> option to include pass outcomes.</li>
+</ul>
+</li>
+<li>Fixed SARIF output includes rule property for default tool component. <a href="https://github.com/microsoft/PSRule/issues/956">#956</a></li>
+</ul>
+</li>
+</ul>
 <h2 id="v200-b2202006-pre-release">v2.0.0-B2202006 (pre-release)<a class="headerlink" href="#v200-b2202006-pre-release" title="Permanent link">#</a></h2>
 <p>What's changed since pre-release v2.0.0-B2201161:</p>
 <ul>
@@ -1591,7 +1652,7 @@
   <small>
     
       Last update:
-      2022-02-03
+      2022-02-08
     
   </small>
 </div>
@@ -1673,10 +1734,10 @@
     <div class="md-dialog" data-md-component="dialog">
       <div class="md-dialog__inner md-typeset"></div>
     </div>
-    <script id="__config" type="application/json">{"base": "..", "features": ["navigation.instant", "navigation.indexes", {"navigation.sections": {"level": 1}}, "navigation.tabs", "content.code.annotate"], "translations": {"clipboard.copy": "Copy to clipboard", "clipboard.copied": "Copied to clipboard", "search.config.lang": "en", "search.config.pipeline": "trimmer, stopWordFilter", "search.config.separator": "[\\s\\-]+", "search.placeholder": "Search", "search.result.placeholder": "Type to start searching", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.term.missing": "Missing", "select.version.title": "Select version"}, "search": "../assets/javascripts/workers/search.22074ed6.min.js", "version": {"provider": "mike", "default": "stable"}}</script>
+    <script id="__config" type="application/json">{"base": "..", "features": ["navigation.instant", "navigation.indexes", {"navigation.sections": {"level": 1}}, "navigation.tabs", "content.code.annotate"], "translations": {"clipboard.copy": "Copy to clipboard", "clipboard.copied": "Copied to clipboard", "search.config.lang": "en", "search.config.pipeline": "trimmer, stopWordFilter", "search.config.separator": "[\\s\\-]+", "search.placeholder": "Search", "search.result.placeholder": "Type to start searching", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.term.missing": "Missing", "select.version.title": "Select version"}, "search": "../assets/javascripts/workers/search.092fa1f6.min.js", "version": {"provider": "mike", "default": "stable"}}</script>
     
     
-      <script src="../assets/javascripts/bundle.960e086b.min.js"></script>
+      <script src="../assets/javascripts/bundle.e3b2bf44.min.js"></script>
       
     
   </body>
