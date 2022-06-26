@@ -15,7 +15,7 @@
         <link rel="canonical" href="https://microsoft.github.io/PSRule/v2/CHANGELOG-v2/">
       
       <link rel="icon" href="../assets/ms_icon.png">
-      <meta name="generator" content="mkdocs-1.3.0, mkdocs-material-8.3.6">
+      <meta name="generator" content="mkdocs-1.3.0, mkdocs-material-8.3.8">
     
     
       
@@ -23,7 +23,7 @@
       
     
     
-      <link rel="stylesheet" href="../assets/stylesheets/main.4a0965b7.min.css">
+      <link rel="stylesheet" href="../assets/stylesheets/main.1d29e8d0.min.css">
       
         
         <link rel="stylesheet" href="../assets/stylesheets/palette.cbb835fc.min.css">
@@ -1023,6 +1023,27 @@
 </li>
       
         <li class="md-nav__item">
+  <a href="#v220-b0131-pre-release" class="md-nav__link">
+    v2.2.0-B0131 (pre-release)
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#v220-b0089-pre-release" class="md-nav__link">
+    v2.2.0-B0089 (pre-release)
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#v220-b0052-pre-release" class="md-nav__link">
+    v2.2.0-B0052 (pre-release)
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
   <a href="#v220-b0021-pre-release" class="md-nav__link">
     v2.2.0-B0021 (pre-release)
   </a>
@@ -1793,6 +1814,27 @@
 </li>
       
         <li class="md-nav__item">
+  <a href="#v220-b0131-pre-release" class="md-nav__link">
+    v2.2.0-B0131 (pre-release)
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#v220-b0089-pre-release" class="md-nav__link">
+    v2.2.0-B0089 (pre-release)
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#v220-b0052-pre-release" class="md-nav__link">
+    v2.2.0-B0052 (pre-release)
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
   <a href="#v220-b0021-pre-release" class="md-nav__link">
     v2.2.0-B0021 (pre-release)
   </a>
@@ -1981,18 +2023,62 @@
 </li>
 </ul>
 <h2 id="unreleased">Unreleased<a class="headerlink" href="#unreleased" title="Permanent link">#</a></h2>
+<h2 id="v220-b0131-pre-release">v2.2.0-B0131 (pre-release)<a class="headerlink" href="#v220-b0131-pre-release" title="Permanent link">#</a></h2>
+<p>What's changed since pre-release v2.2.0-B0089:</p>
+<ul>
+<li>General improvements:<ul>
+<li>Added descendant selector to object path syntax.
+  <a href="https://github.com/microsoft/PSRule/issues/1133">#1133</a><ul>
+<li>Use <code>..</code> to traverse into child objects, for example <code>$..name</code> finds names for all nested objects.</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>Engineering:<ul>
+<li>Bump Newtonsoft.Json to 13.0.1.
+  <a href="https://github.com/microsoft/PSRule/pull/1137">#1137</a></li>
+</ul>
+</li>
+</ul>
+<h2 id="v220-b0089-pre-release">v2.2.0-B0089 (pre-release)<a class="headerlink" href="#v220-b0089-pre-release" title="Permanent link">#</a></h2>
+<p>What's changed since pre-release v2.2.0-B0052:</p>
+<ul>
+<li>General improvements:<ul>
+<li>Improved reporting of the object path that caused rule failures by @BernieWhite.
+  <a href="https://github.com/microsoft/PSRule/issues/1092">#1092</a><ul>
+<li>Output include a new <code>Detail</code> property with details of the reason and the object path.</li>
+<li>Custom methods <code>ReasonFrom</code> and <code>ReasonIf</code> accept a <code>path</code> parameter to specify the object path.</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<h2 id="v220-b0052-pre-release">v2.2.0-B0052 (pre-release)<a class="headerlink" href="#v220-b0052-pre-release" title="Permanent link">#</a></h2>
 <p>What's changed since pre-release v2.2.0-B0021:</p>
 <ul>
-<li>Bug fixes:<ul>
-<li>Fixed output of reason with wide format by @BernieWhite.
-  <a href="https://github.com/microsoft/PSRule/issues/1117">#1117</a></li>
-<li>Fixed piped input does not respect excluded paths by @BernieWhite.
-  <a href="https://github.com/microsoft/PSRule/issues/1114">#1114</a></li>
+<li>General improvements:<ul>
+<li>Added informational message when output has been written to disk by @BernieWhite.
+  <a href="https://github.com/microsoft/PSRule/issues/1074">#1074</a><ul>
+<li>The <code>Output.Footer</code> option now supports <code>OutputFile</code> which reports the output file path.
+  This is enabled by default.</li>
+</ul>
+</li>
 </ul>
 </li>
 <li>Engineering:<ul>
 <li>Added more object path tests by @ArmaanMcleod.
   <a href="https://github.com/microsoft/PSRule/issues/1110">#1110</a></li>
+</ul>
+</li>
+<li>Bug fixes:<ul>
+<li>Fixed output of reason with wide format by @BernieWhite.
+  <a href="https://github.com/microsoft/PSRule/issues/1117">#1117</a></li>
+<li>Fixed piped input does not respect excluded paths by @BernieWhite.
+  <a href="https://github.com/microsoft/PSRule/issues/1114">#1114</a><ul>
+<li>By default, objects are not excluded by source.</li>
+<li>To exclude piped input based on source configure the <code>Input.IgnoreObjectSource</code> option.</li>
+</ul>
+</li>
 </ul>
 </li>
 </ul>
@@ -2566,7 +2652,7 @@
   <small>
     
       Last update:
-      2022-06-19
+      2022-06-25
     
   </small>
 </div>
@@ -2650,10 +2736,10 @@
     <div class="md-dialog" data-md-component="dialog">
       <div class="md-dialog__inner md-typeset"></div>
     </div>
-    <script id="__config" type="application/json">{"base": "..", "features": ["navigation.instant", "navigation.indexes", {"navigation.sections": {"level": 1}}, "navigation.tabs", "content.code.annotate"], "search": "../assets/javascripts/workers/search.85cb4492.min.js", "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.config.lang": "en", "search.config.pipeline": "trimmer, stopWordFilter", "search.config.separator": "[\\s\\-]+", "search.placeholder": "Search", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version.title": "Select version"}, "version": {"default": "stable", "provider": "mike"}}</script>
+    <script id="__config" type="application/json">{"base": "..", "features": ["navigation.instant", "navigation.indexes", {"navigation.sections": {"level": 1}}, "navigation.tabs", "content.code.annotate"], "search": "../assets/javascripts/workers/search.b97dbffb.min.js", "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.config.lang": "en", "search.config.pipeline": "trimmer, stopWordFilter", "search.config.separator": "[\\s\\-]+", "search.placeholder": "Search", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version.title": "Select version"}, "version": {"default": "stable", "provider": "mike"}}</script>
     
     
-      <script src="../assets/javascripts/bundle.a877e258.min.js"></script>
+      <script src="../assets/javascripts/bundle.0238f547.min.js"></script>
       
     
   </body>
